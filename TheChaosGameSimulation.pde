@@ -120,8 +120,9 @@ void draw()
 
 void statistics(){
   pointCounter++; 
-  long minutes = TimeUnit.MILLISECONDS.toMinutes(millis());
-  long seconds = TimeUnit.MILLISECONDS.toSeconds(millis());
+  long ms = millis();
+  long minutes = TimeUnit.MILLISECONDS.toMinutes(ms);
+  long seconds = TimeUnit.MILLISECONDS.toSeconds(ms);
   
   seconds -= (60 * minutes);
   
