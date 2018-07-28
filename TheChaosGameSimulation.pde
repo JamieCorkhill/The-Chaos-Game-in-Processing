@@ -23,7 +23,7 @@ class Vertex
 
 DecimalFormat df = new DecimalFormat("#.####");
 
-//Defining the x and y coordinates respectively.
+//Declaring the x and y coordinates respectively.
 int abscissa;
 int ordinate;
 
