@@ -38,11 +38,11 @@ Vertex vertexPoint2;
 Vertex vertexPoint3;
 
 //Points on the screen, incremented once per loop of the draw() method.
-long pointCounter = 0;
+long int pointCounter = 0;
 
 void setup() 
 {
-  //Genera Settings.
+  //General Settings.
   size(1000, 1000);
   frameRate(90000000);
   surface.setTitle("The Chaos Game - Simulation");
@@ -53,7 +53,7 @@ void setup()
   stroke(0);
   fill(0);
   
-  //Picking some point to begin with. It does not have to (500, 500).
+  //Picking some point to begin with. It does not have to be (500, 500).
   abscissa = 500;
   ordinate = 500;
   
@@ -85,7 +85,7 @@ void draw()
   //Getting some random vertex to move toward.
   int randomPoint = int(random(3));
   
-  //Matching randomPoint with each vertex.
+  //Matching randomPoint with each vertex and plotting.
   switch(randomPoint){
     case 0:     //Vertex 1
       abscissa = (abscissa + vertexPoint1.xPos)/2;                          //Finding halfway between current abscissa (x-coordinate), and abscissa of randomly selected vertex. 
