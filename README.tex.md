@@ -10,7 +10,7 @@ Writing a more rigiours defintion, we have:
 
 Let $x = (x_0, y_0)$ be some ordered pair. Assume that a vertex $(h, k)$ is chosen at random. Then $f(x)$ shall output the ordered pair $\big(\frac{x_0 + h}{2}, \frac{y_0 + k}{2}\big).$
   
-In other words, $f(x)$ just outputs a new ordered pair halfway between the input ordered pair, and the randomly chosen vertex. Following this rule, it is clear to see that the first point we chose inside the triangle is equivalent to $x$ in the sequence above. This is called the seed. After choosing that point, we randomly pick a vertex (by randomly picking the number 1, 2, or 3) as per the function defintion, and draw a new dot halfway between the current dot and that random vertex. This iteratively becomes the orbit of the seed when ordered pair the function outputs becomes its new input the next time around.
+In other words, $f(x)$ just outputs a new ordered pair halfway between the input ordered pair, and the randomly chosen vertex. Following this rule, it is clear to see that the first point we chose inside the triangle is equivalent to $x$ in the sequence above. This is called the seed. After choosing that point, we randomly pick a vertex (by randomly picking the number 1, 2, or 3) as per the function defintion, and draw a new dot halfway between the current dot and that random vertex. This iteratively becomes the orbit of the seed when the ordered pair the function outputs becomes its new input the next time around.
 
 The similarites between the function rule we defined above, and the mechnaical proccess by which the Chaos Game is performed now become clear, and the recurisive nature of this algorithim becomes plain to see.
  
