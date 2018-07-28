@@ -153,6 +153,6 @@ void keyPressed(){
     fill(255, 0, 0);
     text(notifier, 10, 25);
     fill(255);
-    noLoop();
+    noLoop(); 
   }
 }
