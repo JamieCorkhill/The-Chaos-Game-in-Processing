@@ -5,11 +5,11 @@
  * and have the simulation on the other.
  */
 
-
 import java.util.concurrent.TimeUnit;
 import java.text.DecimalFormat;
 
-
+//A simple class whose object will define the verticies of the triangle. This is similar to the Vector2 type in Unity. 
+//Imagine it as a column vector holding an x and y coordinate.
 class Vertex
 {
   int xPos, yPos;
@@ -27,40 +27,42 @@ DecimalFormat df = new DecimalFormat("#.####");
 int abscissa;
 int ordinate;
 
+//We will use a modulo to start and suspend the simulate on each odd click.
 int spaceBarClickCounter = 0;
 
 String notifier;
 
-//Instantiating tpoint objects.
+//Instantiating vertex objects.
 Vertex vertexPoint1;
 Vertex vertexPoint2;
 Vertex vertexPoint3;
 
+//Points on the screen, incremented once per loop of the draw() method.
 long pointCounter = 0;
 
 void setup() 
 {
-  //Settings
+  //Genera Settings.
   size(1000, 1000);
   frameRate(90000000);
   surface.setTitle("The Chaos Game - Simulation");
 
-  //Setting aesthetics
+  //Setting aesthetics.
   noStroke();
   background(0);
   stroke(0);
   fill(0);
   
-  //Picking some point to begin with
+  //Picking some point to begin with. It does not have to (500, 500).
   abscissa = 500;
   ordinate = 500;
   
-  //Set triangle vertercies
+  //Setting initial triangle vertercies. You may have to change this depending on your screen size.
   vertexPoint1 = new Vertex(5,995);
   vertexPoint2 = new Vertex(995,995);
   vertexPoint3 = new Vertex(500,5);
   
-  //Plot points as vertercies
+  //Plotting the verticies of the triangle.
   point(vertexPoint1.xPos, vertexPoint1.yPos);
   point(vertexPoint2.xPos, vertexPoint2.yPos);
   point(vertexPoint3.xPos, vertexPoint3.yPos);
@@ -80,36 +82,36 @@ void draw()
     noLoop();
   }
   
-  //Getting some random vertex
+  //Getting some random vertex to move toward.
   int randomPoint = int(random(3));
   
-  //Matching randomPoint with each vertex
+  //Matching randomPoint with each vertex.
   switch(randomPoint){
     case 0:     //Vertex 1
       abscissa = (abscissa + vertexPoint1.xPos)/2;                          //Finding halfway between current abscissa (x-coordinate), and abscissa of randomly selected vertex. 
       ordinate = (ordinate + vertexPoint1.yPos)/2;                          //Finding halfway between current ordinate (y-coordinate), and ordinate of randomly selected vertex. 
-      stroke(255, 0, 0);                                                    //All the pixels in this section are red. (It looks nice all white.)
+      stroke(255, 255, 255);                                                //All the pixels in this section are white.
       point(abscissa, ordinate);
       break;
     
     case 1:     //Vertex 2
       abscissa = (abscissa + vertexPoint2.xPos)/2;                          //Finding halfway between current abscissa (x-coordinate), and abscissa of randomly selected vertex.
       ordinate = (ordinate + vertexPoint2.yPos)/2;                          //Finding halfway between current ordinate (y-coordinate), and ordinate of randomly selected vertex. 
-      stroke(0, 255, 0);                                                    //All the pixels in this section are green. (It looks nice all white.)
+      stroke(255, 255, 255);                                                //All the pixels in this section are white.
       point(abscissa, ordinate);
       break;
   
     case 2:     //Vertex 3
       abscissa = (abscissa + vertexPoint3.xPos)/2;                          //Finding halfway between current abscissa (x-coordinate), and abscissa of randomly selected vertex.
       ordinate = (ordinate + vertexPoint3.yPos)/2;                          //Finding halfway between current ordinate (y-coordinate), and ordinate of randomly selected vertex. 
-      stroke(0, 0, 255);                                                    //All the pixels in this section are blue. (It looks nice all white.)
+      stroke(255, 255, 255);                                                //All the pixels in this section are white.
       point(abscissa, ordinate);
       break;    
   }
      
   noStroke();
   fill(0);
-  rect(0, 0, 250, 50);
+  rect(0, 0, 250, 50);        //A little trick to cover up text already on the screen.
   fill(255);
   textSize(23);
   text(notifier, 10, 25);
@@ -139,7 +141,6 @@ void keyPressed(){
     noStroke();
     fill(0);
     rect(0, 0, 250, 50);
-    fill(255);
     fill(0, 255, 0);
     text(notifier, 10, 25);
     fill(255);
@@ -149,11 +150,9 @@ void keyPressed(){
     noStroke();
     fill(0);
     rect(0, 0, 250, 50);
-    fill(255);
     fill(255, 0, 0);
     text(notifier, 10, 25);
     fill(255);
     noLoop();
   }
-
 }
