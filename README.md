@@ -10,5 +10,9 @@ In other words, <img src="/tex/7997339883ac20f551e7f35efff0a2b9.svg?invert_in_da
 
 The similarites between the function rule we defined above, and the mechnaical proccess by which the Chaos Game is performed now become clear, and the recurisive nature of this algorithim becomes plain to see.
  
- 
+Due to how tedious this game becomes as the number of iterations becomes infinitely larger, a computer is well tasked to perform the simulation. Most people assume that eventually, the triangle will just become completely filled in, with each pixel within it's bounds eventually becoming an output of <img src="/tex/7997339883ac20f551e7f35efff0a2b9.svg?invert_in_darkmode&sanitize=true" align=middle width=31.99783454999999pt height=24.65753399999998pt/>. That is not, however the case.
+
+In fact, after 500,000 iterations, this is the result we attain:
+
+<img src="/docs/logo.png" alt="My cool logo"/>
 
