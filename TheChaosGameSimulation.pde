@@ -23,11 +23,11 @@ class Vertex
 
 DecimalFormat df = new DecimalFormat("#.####");
 
-//Defining x and y coordinates respectively
+//Defining the x and y coordinates respectively.
 int abscissa;
 int ordinate;
 
-//We will use a modulo to start and suspend the simulate on each odd click.
+//We will use a modulo to start and suspend the simulation on each odd click.
 int spaceBarClickCounter = 0;
 
 String notifier;
@@ -140,7 +140,7 @@ void keyPressed(){
     notifier = "Status: RUNNING";
     noStroke();
     fill(0);
-    rect(0, 0, 250, 50);
+    rect(0, 0, 250, 50);        //A little trick to cover up text already on the screen.
     fill(0, 255, 0);
     text(notifier, 10, 25);
     fill(255);
@@ -149,7 +149,7 @@ void keyPressed(){
     notifier = "Status: STOPPED";
     noStroke();
     fill(0);
-    rect(0, 0, 250, 50);
+    rect(0, 0, 250, 50);        //A little trick to cover up text already on the screen.
     fill(255, 0, 0);
     text(notifier, 10, 25);
     fill(255);
