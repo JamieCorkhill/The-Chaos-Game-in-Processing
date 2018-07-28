@@ -14,5 +14,7 @@ Due to how tedious this game becomes as the number of iterations becomes infinit
 
 In fact, after 500,000 iterations, this is the result we attain:
 
-<img src="/docs/logo.png" alt="My cool logo"/>
+<img src="/Sierpinski Triangle.png" alt="Result after 500,000 iterations."/>
+
+Many will recongnize this as the famous fractal the Sierpinski Triangle.
 
