@@ -10,5 +10,9 @@ In other words, $f(x)$ just outputs a new ordered pair halfway between the input
 
 The similarites between the function rule we defined above, and the mechnaical proccess by which the Chaos Game is performed now become clear, and the recurisive nature of this algorithim becomes plain to see.
  
- 
+Due to how tedious this game becomes as the number of iterations becomes infinitely larger, a computer is well tasked to perform the simulation. Most people assume that eventually, the triangle will just become completely filled in, with each pixel within it's bounds eventually becoming an output of $f(x)$. That is not, however the case.
+
+In fact, after 500,000 iterations, this is the result we attain:
+
+<img src="/docs/logo.png" alt="My cool logo"/>
 
