@@ -6,7 +6,7 @@ To play the Chaos Game, one draws a triangle and labels its veritcies 1, 2, and 
 
 <p align="center"><img src="/tex/3884eec420abe6c41a1078cdb7807f38.svg?invert_in_darkmode&sanitize=true" align=middle width=917.7756901499998pt height=24.65753399999998pt/>
 
-Writing a more rigiours defintion, we have:
+Writing a more rigorous defintion, we have:
 
 Let <img src="/tex/10f49750fa24d7a0bde2996500d77128.svg?invert_in_darkmode&sanitize=true" align=middle width=83.60727374999999pt height=24.65753399999998pt/> be some ordered pair. Assume that a vertex <img src="/tex/1ce3d734524c00bc89a5196c291e8587.svg?invert_in_darkmode&sanitize=true" align=middle width=38.63779424999999pt height=24.65753399999998pt/> is chosen at random. Then <img src="/tex/7997339883ac20f551e7f35efff0a2b9.svg?invert_in_darkmode&sanitize=true" align=middle width=31.99783454999999pt height=24.65753399999998pt/> shall output the ordered pair <img src="/tex/e2b2f194fbe03ab3bf2e08870cb188b6.svg?invert_in_darkmode&sanitize=true" align=middle width=96.92815934999999pt height=30.648287999999997pt/>
   
