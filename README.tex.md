@@ -6,7 +6,7 @@ To play the Chaos Game, one draws a triangle and labels its veritcies 1, 2, and 
 
 <p align="center">$f(x) := \textrm{Pick a random vertex, and output } f(x) \textrm{ to be a new ordered pair halfway between the input } x \text{ and that random vertex.}$
 
-Writing a more rigiours defintion, we have:
+Writing a more rigorous defintion, we have:
 
 Let $x = (x_0, y_0)$ be some ordered pair. Assume that a vertex $(h, k)$ is chosen at random. Then $f(x)$ shall output the ordered pair $\big(\frac{x_0 + h}{2}, \frac{y_0 + k}{2}\big).$
   
