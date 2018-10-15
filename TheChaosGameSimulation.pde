@@ -3,6 +3,8 @@
  * Press the space bar to start and stop, and you can view statistical information in the consle.
  * I reccomend splitting the screen in two. On one half, have the console fully expanded displaying the data,
  * and have the simulation on the other.
+ *
+ * This is not the most efficient of code, nor does it look the best. I just threw something together in a short space of time.
  */
 
 import java.util.concurrent.TimeUnit;
